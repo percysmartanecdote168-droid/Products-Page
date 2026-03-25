@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireTech Industries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">FIRE<span>TECH</span></div>
+            <div class="cart-status">🛒 Cart (<span id="cart-count">0</span>)</div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <section class="gallery">
+            <div class="main-display">
+                <span class="tag">High Performance</span>
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800" id="hero-img" alt="Laptop">
+            </div>
+           <div class="thumbs">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=150" class="t-item active" onclick="swap(this)">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=150" class="t-item" onclick="swap(this)">
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=150" class="t-item" onclick="swap(this)">
+            </div> 
+        </section>
+
+        <section class="config-panel">
+            <header class="product-header">
+                <h1>Fire Blade 16"</h1>
+                <p class="subtitle">Next-Gen M3 Ultra Workstation</p>
+                <div class="price-tag">$<span id="display-price">1499</span>.00</div>
+            </header>
+
+           <div class="spec-highlights">
+                <div><span>CPU</span><strong>M3 Ultra</strong></div>
+                <div><span>Display</span><strong>4K OLED</strong></div>
+                <div><span>Battery</span><strong>22 Hours</strong></div>
+            </div>
+
+            <div class="options">
+                <div class="options-group">
+                    <label>Memory (RAM)</label>
+                    <div class="grid-select">
+                        <button class="opt-btn active" data-price="0" onclick="setOpt(this, 'ram')">16GB</button>
+                        <button class="opt-btn" data-price="200" onclick="setOpt(this, 'ram')">32GB (+$200)</button>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <label>Storage</label>
+                    <div class="grid-select">
+                        <button class="opt-btn active" data-price="0" onclick="setOpt(this, 'ssd')">512GB SSD</button>
+                        <button class="opt-btn" data-price="300" onclick="setOpt(this, 'ssd')">1TB SSD (+$300)</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="purchase-zone">
+                <button class="buy-btn" id="add-btn">Add to Cart</button>
+                <p class="meta">✓ In Stock • Free Express Shipping</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 FireTech Industries. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
