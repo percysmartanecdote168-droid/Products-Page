@@ -12,8 +12,8 @@ body {
     background-color: var(--bg);
 }
 
-header { padding: 20px 5%; border-bottom: 1px solid #e5e5e5; }
-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+header { padding: 20px 5%; border-bottom:1px solid #e5e5e5; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;}
 .logo { font-weight: 900; letter-spacing: -1px; font-size: 1.2rem; }
 .logo span { color: var(--accent); }
 
@@ -21,7 +21,7 @@ nav { display: flex; justify-content: space-between; align-items: center; max-wi
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 50px;
-    max-width: 1200px;
+   max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -29,7 +29,7 @@ nav { display: flex; justify-content: space-between; align-items: center; max-wi
 /* Gallery */
 .main-display { position: relative; background: var(--light-grey); border-radius: 20px; overflow: hidden; }
 .main-display img { width: 100%; display: block; mix-blend-mode: multiply; }
-.tag { position: absolute; top: 20px; left: 20px; background: var(--text); color: white; padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; text-transform: uppercase; }
+.tag { position: absolute; top: 20px; left: 20px; background: black; color: white; padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; text-transform: uppercase; }*/
 .thumbs { display: flex; gap: 10px; margin-top: 20px; }
 .t-item { width: 70px; height: 70px; border-radius: 10px; cursor: pointer; object-fit: cover; border: 2px solid transparent; transition: 0.2s; }
 .t-item.active { border-color: var(--accent); }
@@ -59,7 +59,10 @@ h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
 
 .meta { text-align: center; color: #86868b; font-size: 0.8rem; margin-top: 15px; }
 
-/* Responsive */
+/*Footer*/
+.footer { text-align: center; padding: 20px 0; color: #86868b; font-size: 0.8rem; border-top: 1px solid #e5e5e5; margin-top: 40px; }
+
+/* Responsiveness */
 @media (max-width: 900px) {
     .product-page { grid-template-columns: 1fr; }
 }

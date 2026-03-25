@@ -40,7 +40,7 @@ document.getElementById('add-btn').addEventListener('click', function() {
     this.style.opacity = "0.7";
     
     setTimeout(() => {
-        this.innerText = "Added to Bag";
+        this.innerText = "Added to Cart";
         this.style.background = "#1d1d1f";
         this.style.opacity = "1";
     }, 800);
